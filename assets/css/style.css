@@ -1,0 +1,38 @@
+/* importing google fonts */
+@import url ('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&disply=swap')
+
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background: lightblue
+}
+
+.start_btn, 
+.info_box{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+
+}
+
+/*Quiz button styling */
+.start_btn button{
+    font-size: 30px;
+    font-weight:900;
+    color: blueviolet;
+    padding: 30 px 60 px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+
+}
+
+ .hidden {
+     display: none;
+ }
