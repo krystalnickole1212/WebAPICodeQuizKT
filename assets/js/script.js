@@ -34,15 +34,15 @@ startButton.onclick = startQuiz
 
 //Question and answer choices appear
 function startQuiz() {
-startButton.setAttribute("class", "hidden")
+    startButton.setAttribute("class", "hidden")
     document.getElementById("question").textContent = question1
     //document.getElementById("answerChoices").innerHTML= answerChoices1  
 
-    answerChoices1.forEach(function(value){
+    answerChoices1.forEach(function (value) {
         document.getElementById("answerChoices").innerHTML += ("<button>" + value + "</button>")
-     });
+    });
 
-   
+
     //Start timer 
 
     timerId = setInterval(function () {
@@ -57,7 +57,7 @@ startButton.setAttribute("class", "hidden")
 
 function Timer() {
     //Time left on the timer
-
+    function outOfTime() { }
 }
 
 
@@ -68,24 +68,26 @@ function takingQuiz() {
 
 
     //You chose the correct answer
+    function nextQuestion() {
 
+    }
 
     //You chose the incorrect answer
+    function wrongAnswer() {
 
+    }
 
     //Time off the timer for incorrect answer
+    function removeTime() {
 
+    }
 
     //Game is over when timer reaches 0 OR all questions answered
+    function allAnswered() {
 
+    }
 
 }
-
-
-
-
-
-
 
 function endQuiz() {
     //Game is over-save initials and score   
